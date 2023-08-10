@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      :root {
+        --background-color: #322653;
+        --text-color: #e0e8f0;
+        --accent-color: #448aff;
+        --secondary-color: #607d8b;
+        --highlight-color: #7A9D54;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+      }
+      body {
+        margin: 0;
+        font-family: "Quicksand", sans-serif;
+        background-color: var(--background-color);
+      }
+      .cards-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 240px);
+        gap: 26px;
+        place-content: center;
+      }
+      .product-card {
+        width: 240px;
+      }
+      .product-card img {
+        width: 240px;
+        height: 240px;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+      .product-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 12px;
+      }
+      .product-info figure {
+        margin: 0;
+      }
+      .product-info figure img {
+        width: 35px;
+        height: 35px;
+      }
+      .product-info div p:nth-child(1) {
+        font-weight: bold;
+        font-size: var(--md);
+        color: var(--text-color);
+        margin-top: 0;
+        margin-bottom: 4px;
+      }
+      .product-info div p:nth-child(2) {
+        font-size: var(--sm);
+        color: var(--secondary-color);
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      @media (max-width: 640px) {
+        .cards-container {
+          grid-template-columns: repeat(auto-fill, 140px);
+        }
+        .product-card {
+          width: 140px;
+        }
+        .product-card img {
+          width: 140px;
+          height: 140px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main-container">
+      <div class="cards-container">
+        <div class="product-card">
+          <img
+            src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p>$ 135,000</p>
+              <p>Lamborghini blue</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://images.pexels.com/photos/575386/pexels-photo-575386.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p>$ 130,000</p>
+              <p>Audi Yellow</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://images.pexels.com/photos/17631379/pexels-photo-17631379/free-photo-of-coche-vehiculo-viaje-transporte.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p>$ 150,000</p>
+              <p>Chevrolet Blue</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://images.pexels.com/photos/248687/pexels-photo-248687.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p>$ 90,000</p>
+              <p>Toyota Classic</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://images.pexels.com/photos/17585718/pexels-photo-17585718/free-photo-of-ciudad-trafico-calle-arboles.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p>$ 180,00</p>
+              <p>Audi R8 White</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://images.pexels.com/photos/39855/lamborghini-brno-racing-car-automobiles-39855.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p>$ 350,000</p>
+              <p>Lamborghini Orange</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://images.pexels.com/photos/1007410/pexels-photo-1007410.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p>$ 190,000</p>
+              <p>Kia Rio Plate</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://images.pexels.com/photos/757185/pexels-photo-757185.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p>$ 140,000</p>
+              <p>Nissan Red</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://images.pexels.com/photos/210156/pexels-photo-210156.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p>$ 220,000</p>
+              <p>Ford Classic</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://images.pexels.com/photos/4056598/pexels-photo-4056598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p>$ 350,000</p>
+              <p>Mercedes White</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://images.pexels.com/photos/951318/pexels-photo-951318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p>$ 330,000</p>
+              <p>BMW Plate</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://images.pexels.com/photos/1082655/pexels-photo-1082655.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p>$ 100,000</p>
+              <p>Mini Cooper Orange</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
